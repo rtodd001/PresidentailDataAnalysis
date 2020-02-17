@@ -88,4 +88,5 @@ class SurveyUSA4TablesSpider(scrapy.Spider):
 				'c74' : row.xpath('td[74]//text()').extract_first(),
 				'c75' : row.xpath('td[75]//text()').extract_first(),
 				'c76' : row.xpath('td[76]//text()').extract_first(),
+                'c77' : row.xpath('td[77]//text()').extract_first(),
 			}
