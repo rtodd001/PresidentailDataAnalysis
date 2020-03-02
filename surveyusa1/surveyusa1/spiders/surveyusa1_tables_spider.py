@@ -4,7 +4,7 @@ class SurveyUSA1TablesSpider(scrapy.Spider):
 	name = "surveyusa1"
 
 	def start_requests(self):
-		urls = ['http://www.surveyusa.com/client/PollReport_main.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759',]
+		urls = ['http://www.surveyusa.com/client/PollReport_main.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&d=1',]
 
 		for url in urls:
 			yield scrapy.Request(url=url, callback=self.parse)
