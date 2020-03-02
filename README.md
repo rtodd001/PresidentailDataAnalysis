@@ -23,3 +23,7 @@ We also obtained datasets from the website FourThirtyEight, which shows live pol
 ## Phase 2: Data Cleaning & EDA
 ###### (due March 1, 2020)
 
+For Phase 2 of the project, we managed to get the SurveyUSA datasets in counts instead of percentages and performed further cleaning to the newly obtained datasets. We then went through all of our data (from both FourThirtyEight and SurveyUSA), performed EDA on the most relavent data for our topic, and visualized our data using different graphing techniques such as scatterplots and bar graphs.
+
+## Phase 3: Data Analysis
+##### (Due March 14, 2020)
