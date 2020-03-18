@@ -27,3 +27,11 @@ For Phase 2 of the project, we managed to get the SurveyUSA datasets in counts i
 
 ## Phase 3: Data Analysis
 ##### (Due March 14, 2020)
+=======
+For Phase 2 of the project we fixed some issues with the data collection, then cleaned the data and started performing EDA on it.
+
+The data was being collected in percentages when we should have been getting counts, so Ronan worked on modifying our collection to grab the correct data.
+
+The data cleaning is done by Wesley in notebooks located in each surveyusa folder, the script cleans the data to look like the tables we got them from, using multi-indexing from the pandas library to sort the data with multiple headers so it is more convenient to work with and perform analysis on.
+
+The EDA is done in the phase2 notebook, Simi and Wesley worked on performing EDA on the president_polls.csv file and the surveyusa files.
