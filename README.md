@@ -2,9 +2,9 @@
 
 - [Dependencies](#dependencies)
 - [Main Objectives](#main-objectives)
-- [Phase 1: Data Scraping](#phase-1--data-scraping)
-- [Phase 2: Data Cleaning & EDA](#phase-2--data-cleaning---eda)
-- [Phase 3: Data Analysis](#phase-3--data-analysis)
+- [Phase 1 Data Scraping](#phase-1--data-scraping)
+- [Phase 2 Data Cleaning & EDA](#phase-2--data-cleaning---eda)
+- [Phase 3 Data Analysis](#phase-3--data-analysis)
 
 ## Dependencies 
 In order to use the web scraper, run the below command for Linux:
