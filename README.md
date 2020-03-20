@@ -1,9 +1,18 @@
 # CS 105 Final Project  
 
 ## Dependencies
+In order to use the web scraper, run the below command for Linux:
+```
+sudo pip3 install Scrapy
+```
+Or if you use conda:
+```
+conda install -c conda-forge-scrapy
+```
+You will software that is able to read a Jupyter Notebook
 
 
-Main Objectives
+## Main Objectives
 - Did the impeachment negatively affect Donald Trump's approval rating?
 - Has COVID-19 impacted the Democratic Candidate Race?
 
@@ -20,10 +29,10 @@ Our final project for CS 105 was split up into three phases:
 
 For Phase 1 of the project, we scraped four different datasets from the website SurveyUSA using Scrapy and cleaned them. Links to the datasets are:
 
-http://www.surveyusa.com/client/PollReport.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759
-http://www.surveyusa.com/client/PollReport.aspx?g=0f19d585-788e-4f86-81d0-d09a5e046780
-http://www.surveyusa.com/client/PollReport.aspx?g=b4747822-277e-4d2c-b896-eb4e04672c09
-http://www.surveyusa.com/client/PollReport.aspx?g=5128ee79-1b59-4146-bf80-54906bb24d4b
+[surveyusa 1](http://www.surveyusa.com/client/PollReport.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759)
+[surveyusa 2](http://www.surveyusa.com/client/PollReport.aspx?g=0f19d585-788e-4f86-81d0-d09a5e046780)
+[surveyusa 3](http://www.surveyusa.com/client/PollReport.aspx?g=b4747822-277e-4d2c-b896-eb4e04672c09)
+[surveyusa 4](http://www.surveyusa.com/client/PollReport.aspx?g=5128ee79-1b59-4146-bf80-54906bb24d4b)
 
 The website is not very organized, and all of the tables were named the same thing so our robot could not scrape the data in a very meaningful way. After scraping the data, we created a Python script in JupyterLab to clean the data and seperate it into the 34 different tables that were originally found on the website. In each survey folder there is one csv file named surveyusa1/2/3/4.csv with the raw data gathered, and 34 other survey_#.csv files with the separated, reordered, and cleaned data.
 
