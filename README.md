@@ -73,7 +73,7 @@ We go through all of our data (from both FourThirtyEight and SurveyUSA), perform
 We are now using the clean data to answer our [Main Objectives](#main-objectives).
 #### Impeachment
 
-We have of Donald Trump's approval ratings since 2017. We filter the data to the specific timeline of the impeachment process. Let's review the timeline of everything before we start.
+We have data of Donald Trump's approval ratings since 2017. We filter the data to the specific timeline of the impeachment process. Let's review the timeline of everything before we start.
  
 - December 18, 2020 : Impeached by US HoR
 - January 16, 2020 : Passed the Senate
