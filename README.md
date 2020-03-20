@@ -1,10 +1,19 @@
 # CS 105 Final Project  
 
+## Dependencies
+
+
+Main Objectives
+- Did the impeachment negatively affect Donald Trump's approval rating?
+- Has COVID-19 impacted the Democratic Candidate Race?
+
+
 Our final project for CS 105 was split up into three phases:
 
 - Phase 1: Data Scraping
 - Phase 2: Data Cleaning & EDA
 - Phase 3: Analysis & Conclusions
+
 
 ## Phase 1: Data Scraping
 ###### (due February 16, 2020)
@@ -18,6 +27,8 @@ http://www.surveyusa.com/client/PollReport.aspx?g=5128ee79-1b59-4146-bf80-54906b
 
 The website is not very organized, and all of the tables were named the same thing so our robot could not scrape the data in a very meaningful way. After scraping the data, we created a Python script in JupyterLab to clean the data and seperate it into the 34 different tables that were originally found on the website. In each survey folder there is one csv file named surveyusa1/2/3/4.csv with the raw data gathered, and 34 other survey_#.csv files with the separated, reordered, and cleaned data.
 
+The website also showed all sample results in frequencies instead of counts. For example, the sample size was 5000 but the result showed 53% instead of 2650. We had to inspect the page element in depth to find how to scrape the counts instead of frequencies because the url for both were the same. After digging through the sources, we found that the landing site has two embedded sites that it loads up. We found the url for the embedded count data and fed that to our scraper.
+
 We also obtained datasets from the website FourThirtyEight, which shows live polling data. The data was directly downloaded from their GitHub repository [here](https://github.com/fivethirtyeight/data/tree/master/polls).
 
 ## Phase 2: Data Cleaning & EDA
@@ -26,7 +37,7 @@ We also obtained datasets from the website FourThirtyEight, which shows live pol
 For Phase 2 of the project, we managed to get the SurveyUSA datasets in counts instead of percentages and performed further cleaning to the newly obtained datasets. We then went through all of our data (from both FourThirtyEight and SurveyUSA), performed EDA on the most relavent data for our topic, and visualized our data using different graphing techniques such as scatterplots and bar graphs.
 
 ## Phase 3: Data Analysis
-##### (Due March 14, 2020)
+##### (Due March 20, 2020)
 =======
 For Phase 2 of the project we fixed some issues with the data collection, then cleaned the data and started performing EDA on it.
 
