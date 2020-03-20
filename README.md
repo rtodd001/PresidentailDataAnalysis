@@ -9,9 +9,9 @@
 - [Main Objectives](#main-objectives)
 - [Product Specification](#product-specification)
 - [Dependencies](#dependencies)
-- [Sprint 1 Data Scraping](#phase-1-data-scraping)
-- [Sprint 2 Data Cleaning & EDA](#phase-2-data-cleaning--eda)
-- [Sprint 3 Data Analysis](#phase-3-data-analysis)
+- [Sprint 1 Data Scraping](#sprint-1-data-scraping)
+- [Sprint 2 Data Cleaning & EDA](#sprint-2-data-cleaning--eda)
+- [Sprint 3 Data Analysis](#sprint-3-data-analysis)
 
 ## Main Objectives
 We plan to use data in order to analyze President Donald Trump's approval rating and the ongoing Democratic Candidate Race. During our analysis, we answer the following questions:
@@ -19,7 +19,7 @@ We plan to use data in order to analyze President Donald Trump's approval rating
 2. Has COVID-19 impacted the Democratic Candidate Race?
 
 ## Product specification
-> For this phase, you are asked to perform data analysis. This can include building a model to
+> For this sprint, you are asked to perform data analysis. This can include building a model to
 perform prediction (like applying linear regression or kNN) or clustering. You can also use the
 models for data analysis, not just ‘predictions’. For example, in linear regression we saw that the
 resulting coefficients tell us how the features are correlated to the target variable. So, this analysis
@@ -110,3 +110,11 @@ During the Acquitted process, the trend changes. It is still shaky low 30s to hi
 Overall, the changes in his approval ratings were still minimal in the long run. There are moments where the ratings hit an overall low, but the trend still stayed consistent.
 
 ### 2. Has COVID-19 impacted the Democratic Candidate Race?
+
+We have been tracking the candidacy throughout the project. However, the number of candidates running have drastically changed since the beginning of the project. We have are focusing on the top two Candidates: Biden vs Bernie. For the full list of candidates that have dropped out of the race, click [here](https://www.google.com/amp/s/people.com/politics/2020-presidential-candidates-who-have-dropped-out/amp/).
+
+Wesley creates a Linear Regression model to show detailed analysis of the candidate polls. You can find the Notebook detailing the findings [here](https://github.com/CS-UCR/cs105-prj-phase1-lolli-lolli-lollipop/blob/master/phase3_wesley.ipynb). While observing the data, we discover that there is an inflection around the beginning of 2020. This coincides with the timeframe of COVID-19 appearing on worldwide media. We decide to investigate California, a strong democratic state. In California, Biden and Bernie show similar support in the beginning of the race. The data shows that Biden had higher numbers than Bernie. Then at the inflection point, around January, Biden starts to lose and Bernie starts to win. Bernie has a strong healthcare stance in his campaign. We believe that due to the pandemic, people are aligning themselves with the candidate with better healthcare support. 
+
+Wesley decided to expand the model to the entire US if the decision is nation-wide. The last two graphs in the Notebook shows a scatterplot of the US polls for Biden vs Bernie. It is clear to see a trend. It is intestring to note that Bernie and Biden have traded approval number through the pandemic. 
+
+We have decided to not do any prediction because it is highly dependent on external factors.
