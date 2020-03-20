@@ -34,6 +34,9 @@ For macOS:
 pip install -U scikit-learn
 ```
 To run Data Formatting 
+```
+pip install pandas
+```
 You will also need software that is able to read a Jupyter Notebook (.ipnyb file)
 
 ## Phase 1 Data Scraping
