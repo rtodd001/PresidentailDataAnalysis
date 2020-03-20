@@ -26,7 +26,7 @@ You will also need software that is able to read a Jupyter Notebook (.ipnyb file
 - Did the impeachment negatively affect Donald Trump's approval rating?
 - Has COVID-19 impacted the Democratic Candidate Race?
 
-## Phase 1: Data Scraping
+## Phase 1 Data Scraping
 ###### (Due February 16, 2020) Simran and Ronan
 
 For Phase 1 of the project, we scrape four different datasets from the website SurveyUSA using Scrapy. Links to the datasets are:
@@ -47,14 +47,14 @@ http://www.surveyusa.com/client/PollReport_main.aspx?g=9634c475-cb54-4a34-ab4b-c
 
 We also obtain datasets from the website FourThirtyEight, which show live polling data. The data is directly downloaded from their GitHub repository [here](https://github.com/fivethirtyeight/data/tree/master/polls).
 
-## Phase 2: Data Cleaning & EDA
+## Phase 2 Data Cleaning & EDA
 ###### (Due March 1, 2020) Simran and Wesley
 
 SurveyUSA is not very organized and has multiple tables of unique questions. All of the tables have the same name so our robot can not scrape the data in a very meaningful way. Our scraper reads all the tables as one big table. We create a Python script in JupyterLab to clean the data and seperate it into the 34 different tables. Additionally, the tables are multi-indexed but the scraper sees it as data. We have to remove the indeces after running the split script. When reading the data sets for EDA, we must run a re-indexing script. In each survey folder there is one csv file named surveyusa1/2/3/4.csv with the raw data, and 34 other survey_#.csv files with the separated, reordered, and cleaned data.
 
 We go through all of our data (from both FourThirtyEight and SurveyUSA), perform EDA on the most relavent data for our topic, and visualize our data using different graphing techniques such as scatterplots and bar graphs.
 
-## Phase 3: Data Analysis
+## Phase 3 Data Analysis
 ###### (Due March 20, 2020) Simran, Ronan, and Wesley
 
 For Phase 2 of the project we fixed some issues with the data collection, then cleaned the data and started performing EDA on it.
