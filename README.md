@@ -3,7 +3,7 @@
 - [Dependencies](#dependencies)
 - [Main Objectives](#main-objectives)
 - [Phase 1 Data Scraping](#phase-1-data-scraping)
-- [Phase 2 Data Cleaning & EDA](#phase-2-data-cleaning-and-eda)
+- [Phase 2 Data Cleaning & EDA](#phase-2-data-cleaning--and-eda)
 - [Phase 3 Data Analysis](#phase-3-data-analysis)
 
 ## Dependencies 
@@ -19,6 +19,7 @@ For macOS:
 ```
 pip install -U scikit-learn
 ```
+To run Data Formatting 
 You will also need software that is able to read a Jupyter Notebook (.ipnyb file)
 
 
