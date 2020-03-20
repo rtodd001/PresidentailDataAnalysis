@@ -1,4 +1,9 @@
 # CS 105 Final Project
+#### Team Lollipop
+- Simran Purewal, SID: 862086140
+- Ronan Todd, SID: 861228848
+- Wesley DeVore, SID: 862081656
+
 
 ### Table of Contents
 - [Main Objectives](#main-objectives)
@@ -14,13 +19,12 @@ We plan to use data in order to analyze President Donald Trump's approval rating
 2. Has COVID-19 impacted the Democratic Candidate Race?
 
 ## Product specification
-````
-For this phase, you are asked to perform data analysis. This can include building a model to
+> For this phase, you are asked to perform data analysis. This can include building a model to
 perform prediction (like applying linear regression or kNN) or clustering. You can also use the
 models for data analysis, not just ‘predictions’. For example, in linear regression we saw that the
 resulting coefficients tell us how the features are correlated to the target variable. So, this analysis
 might help you identify features of importance with respect to a target feature in the dataset.
-````
+
 
 ## Dependencies 
 ### Scrapy
@@ -42,35 +46,48 @@ To run Data Formatting, we use Pandas. Linux and macOS users can run the below c
 ```
 pip install pandas
 ```
+### Other Software
 You will also need software that is able to read a Jupyter Notebook (.ipnyb file)
 
 ## Phase 1 Data Scraping
 ###### (Due February 16, 2020) Simran and Ronan
 
-For Phase 1 of the project, we scrape four different datasets from the website SurveyUSA using Scrapy. Links to the datasets are: (Simi)
+For Phase 1 of the project, we obtain relevant datasets from two different websites: SurveyUSA and FourThirtyEight. 
 
-http://www.surveyusa.com/client/PollReport_main.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&d=1
-http://www.surveyusa.com/client/PollReport_main.aspx?g=0f19d585-788e-4f86-81d0-d09a5e046780&d=1
-http://www.surveyusa.com/client/PollReport_main.aspx?g=b4747822-277e-4d2c-b896-eb4e04672c09&d=1
-http://www.surveyusa.com/client/PollReport_main.aspx?g=5128ee79-1b59-4146-bf80-54906bb24d4b&d=1
+### SurveyUSA
+From SurveyUSA, we scrape four different datasets using Scrapy. Links to the datasets are: (Simi)
+
+- [Either Biden, Sanders, or Warren is in Front in Delegate-Rich California, 45 Days Till Ballots Are Counted](http://www.surveyusa.com/client/PollReport_main.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&d=1)
+- [Interviews Conducted After Democratic Candidate Debate In Atlanta, During Televised Impeachment Hearings on Capitol Hill](http://www.surveyusa.com/client/PollReport_main.aspx?g=0f19d585-788e-4f86-81d0-d09a5e046780&d=1)
+- [17 Days till Iowans Caucus, Where Does the Democratic Primary Stand Nationwide?](http://www.surveyusa.com/client/PollReport_main.aspx?g=b4747822-277e-4d2c-b896-eb4e04672c09&d=1)
+- [6 High-Profile Democrats All Defeat Dented Donald Trump in General Election 'Today'](http://www.surveyusa.com/client/PollReport_main.aspx?g=5128ee79-1b59-4146-bf80-54906bb24d4b&d=1)
 
 The website also shows all sample results in frequencies instead of counts. For example in one question, the sample size is 5000 but the result show 53% instead of 2650. We have to inspect the page element in depth to find how to scrape the counts instead of frequencies. After digging through the sources, we find that the landing site has two embedded sites that it loads up based on a dropdown menu that chooses between frequency and counts. We feed the embedded count url into the scraper. (Ronan)
+
 The landing url for the first link above is as follows:
 
-http://www.surveyusa.com/client/PollReport.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&
+> http://www.surveyusa.com/client/PollReport.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&
 
 But the embedded url containing all the data in counts is as follows:
 
-http://www.surveyusa.com/client/PollReport_main.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&d=1
+> http://www.surveyusa.com/client/PollReport_main.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&d=1
 
-We also obtain datasets from the website FourThirtyEight, which show live polling data. The data is directly downloaded from their GitHub repository [here](https://github.com/fivethirtyeight/data/tree/master/polls). (Simi)
+### FourThirtyEight
+We also obtain datasets from the website FourThirtyEight, which show live polling data. The data is directly downloaded from their GitHub repository [here](https://github.com/fivethirtyeight/data/tree/master/polls). (Simi) In particular, the datasets we obtain from FourThirtyEight are:
+- Presidential Primary Polls
+- Presidential General Election Polls
+- Presidential Approval Polls
 
 ## Phase 2 Data Cleaning & EDA
 ###### (Due March 1, 2020) Simran and Wesley
 
+For Phase 2 of the project, we were required to clean the datasets obtained in Phase 1 and perform EDA on the relevant data.
+
+### Data Cleaning
 SurveyUSA is not very organized and has multiple tables of unique questions. All of the tables have the same name so our robot can not scrape the data in a very meaningful way. Our scraper reads all the tables as one big table. We create a Python script in JupyterLab to clean the data and seperate it into the 34 different tables. Additionally, the tables are multi-indexed but the scraper sees it as data. We have to remove the indeces after running the split script. When reading the data sets for EDA, we must run a re-indexing script. In each survey folder there is one csv file named surveyusa1/2/3/4.csv with the raw data, and 34 other survey_#.csv files with the separated, reordered, and cleaned data.(Wesley)
 
-We go through all of our data (from both FourThirtyEight and SurveyUSA), perform EDA on the most relavent data for our topic, and visualize our data using different graphing techniques such as scatterplots and bar graphs. (Simi)
+### EDA
+We go through all of our data (from both FourThirtyEight and SurveyUSA), perform EDA on the most relevant data for our topic, and visualize our data using different graphing techniques such as scatterplots and bar graphs. (Simi)
 
 ## Phase 3 Data Analysis
 ###### (Due March 20, 2020) Simran, Ronan, and Wesley
