@@ -1,10 +1,24 @@
 # CS 105 Final Project
 
-- [Dependencies](#dependencies)
 - [Main Objectives](#main-objectives)
+- [Product Specification](#product-specification)
+- [Dependencies](#dependencies)
 - [Phase 1 Data Scraping](#phase-1-data-scraping)
 - [Phase 2 Data Cleaning & EDA](#phase-2-data-cleaning--eda)
 - [Phase 3 Data Analysis](#phase-3-data-analysis)
+
+## Main Objectives
+- Did the impeachment negatively affect Donald Trump's approval rating?
+- Has COVID-19 impacted the Democratic Candidate Race?
+
+## Product specification
+````
+For this phase, you are asked to perform data analysis. This can include building a model to
+perform prediction (like applying linear regression or kNN) or clustering. You can also use the
+models for data analysis, not just ‘predictions’. For example, in linear regression we saw that the
+resulting coefficients tell us how the features are correlated to the target variable. So, this analysis
+might help you identify features of importance with respect to a target feature in the dataset.
+````
 
 ## Dependencies 
 In order to use the web scraper, run the below command for Linux:
@@ -21,11 +35,6 @@ pip install -U scikit-learn
 ```
 To run Data Formatting 
 You will also need software that is able to read a Jupyter Notebook (.ipnyb file)
-
-
-## Main Objectives
-- Did the impeachment negatively affect Donald Trump's approval rating?
-- Has COVID-19 impacted the Democratic Candidate Race?
 
 ## Phase 1 Data Scraping
 ###### (Due February 16, 2020) Simran and Ronan
