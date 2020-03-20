@@ -20,14 +20,6 @@ You will also need software that is able to read a Jupyter Notebook (.ipnyb file
 - Did the impeachment negatively affect Donald Trump's approval rating?
 - Has COVID-19 impacted the Democratic Candidate Race?
 
-
-## Structure
-
-- Phase 1: Data Scraping
-- Phase 2: Data Cleaning & EDA
-- Phase 3: Analysis & Conclusions
-
-
 ## Phase 1: Data Scraping
 ###### (Due February 16, 2020) Simran and Ronan
 
@@ -52,7 +44,7 @@ We also obtain datasets from the website FourThirtyEight, which show live pollin
 ## Phase 2: Data Cleaning & EDA
 ###### (Due March 1, 2020) Simran and Wesley
 
-SurveyUSA is not very organized and has multiple tables of unique questions. All of the tables have the same name so our robot can not scrape the data in a very meaningful way. Our scraper reads all the tables as one big table. We create a Python script in JupyterLab to clean the data and seperate it into the 34 different tables. In each survey folder there is one csv file named surveyusa1/2/3/4.csv with the raw data, and 34 other survey_#.csv files with the separated, reordered, and cleaned data.
+SurveyUSA is not very organized and has multiple tables of unique questions. All of the tables have the same name so our robot can not scrape the data in a very meaningful way. Our scraper reads all the tables as one big table. We create a Python script in JupyterLab to clean the data and seperate it into the 34 different tables. Additionally, the tables are multi-indexed but the scraper sees it as data. We have to remove the indeces after running the split script. When reading the data sets for EDA, we must run a re-indexing script. In each survey folder there is one csv file named surveyusa1/2/3/4.csv with the raw data, and 34 other survey_#.csv files with the separated, reordered, and cleaned data.
 
 We go through all of our data (from both FourThirtyEight and SurveyUSA), perform EDA on the most relavent data for our topic, and visualize our data using different graphing techniques such as scatterplots and bar graphs.
 
