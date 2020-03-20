@@ -4,8 +4,8 @@
 [Dependencies](##dependencies)
 [Main Objectives](##main_objectives)
 
-<a name="dependencies">
-## Dependencies <a/>
+<a name="dependencies"/>
+## Dependencies
 In order to use the web scraper, run the below command for Linux:
 ```
 sudo pip3 install Scrapy
