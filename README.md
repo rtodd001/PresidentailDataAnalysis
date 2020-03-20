@@ -9,9 +9,9 @@
 - [Main Objectives](#main-objectives)
 - [Product Specification](#product-specification)
 - [Dependencies](#dependencies)
-- [Phase 1 Data Scraping](#phase-1-data-scraping)
-- [Phase 2 Data Cleaning & EDA](#phase-2-data-cleaning--eda)
-- [Phase 3 Data Analysis](#phase-3-data-analysis)
+- [Sprint 1 Data Scraping](#phase-1-data-scraping)
+- [Sprint 2 Data Cleaning & EDA](#phase-2-data-cleaning--eda)
+- [Sprint 3 Data Analysis](#phase-3-data-analysis)
 
 ## Main Objectives
 We plan to use data in order to analyze President Donald Trump's approval rating and the ongoing Democratic Candidate Race. During our analysis, we answer the following questions:
@@ -49,10 +49,10 @@ pip install pandas
 ### Other Software
 You will also need software that is able to read a Jupyter Notebook (.ipnyb file)
 
-## Phase 1 Data Scraping
+## Sprint 1 Data Scraping
 ###### (Due February 16, 2020) Simran and Ronan
 
-For Phase 1 of the project, we obtain relevant datasets from two different websites: SurveyUSA and FourThirtyEight. 
+For Sprint 1 of the project, we obtain relevant datasets from two different websites: SurveyUSA and FourThirtyEight. 
 
 ### SurveyUSA
 From SurveyUSA, we scrape four different datasets using Scrapy. Links to the datasets are: (Simi)
@@ -78,10 +78,10 @@ We also obtain datasets from the website FourThirtyEight, which show live pollin
 - Presidential General Election Polls
 - Presidential Approval Polls
 
-## Phase 2 Data Cleaning & EDA
+## Sprint 2 Data Cleaning & EDA
 ###### (Due March 1, 2020) Simran and Wesley
 
-For Phase 2 of the project, we were required to clean the datasets obtained in Phase 1 and perform EDA on the relevant data.
+For Sprint 2 of the project, we were required to clean the datasets obtained in Sprint 1 and perform EDA on the relevant data.
 
 ### Data Cleaning
 SurveyUSA is not very organized and has multiple tables of unique questions. All of the tables have the same name so our robot can not scrape the data in a very meaningful way. Our scraper reads all the tables as one big table. We create a Python script in JupyterLab to clean the data and seperate it into the 34 different tables. Additionally, the tables are multi-indexed but the scraper sees it as data. We have to remove the indeces after running the split script. When reading the data sets for EDA, we must run a re-indexing script. In each survey folder there is one csv file named surveyusa1/2/3/4.csv with the raw data, and 34 other survey_#.csv files with the separated, reordered, and cleaned data.(Wesley)
@@ -89,7 +89,7 @@ SurveyUSA is not very organized and has multiple tables of unique questions. All
 ### EDA
 We go through all of our data (from both FourThirtyEight and SurveyUSA), perform EDA on the most relevant data for our topic, and visualize our data using different graphing techniques such as scatterplots and bar graphs. (Simi)
 
-## Phase 3 Data Analysis
+## Sprint 3 Data Analysis
 ###### (Due March 20, 2020) Simran, Ronan, and Wesley
 
 We are now using the clean data to answer our [Main Objectives](#main-objectives).
