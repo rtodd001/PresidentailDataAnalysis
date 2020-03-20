@@ -87,10 +87,4 @@ During the Acquitted process, the trend changes. It is still shaky low 30s to hi
 
 Overall, the changes in his approval ratings were still minimal in the long run. There are moments where the ratings hit an overall low, but the trend still stayed consistent.
 
-For Phase 2 of the project we fixed some issues with the data collection, then cleaned the data and started performing EDA on it.
-
-The data was being collected in percentages when we should have been getting counts, so Ronan worked on modifying our collection to grab the correct data.
-
-The data cleaning is done by Wesley in notebooks located in each surveyusa folder, the script cleans the data to look like the tables we got them from, using multi-indexing from the pandas library to sort the data with multiple headers so it is more convenient to work with and perform analysis on.
-
-The EDA is done in the phase2 notebook, Simi and Wesley worked on performing EDA on the president_polls.csv file and the surveyusa files.
+#### COVID-19 Impact
