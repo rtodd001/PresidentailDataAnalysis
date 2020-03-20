@@ -1,6 +1,11 @@
-# CS 105 Final Project  
+# CS 105 Final Project
 
-## Dependencies
+#### Table of Contents
+[Dependencies](##dependencies)
+[Main Objectives](##main_objectives)
+
+<a name="dependencies">
+## Dependencies <a/>
 In order to use the web scraper, run the below command for Linux:
 ```
 sudo pip3 install Scrapy
