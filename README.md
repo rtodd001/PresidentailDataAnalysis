@@ -1,5 +1,6 @@
 # CS 105 Final Project
 
+### Table of Contents
 - [Main Objectives](#main-objectives)
 - [Product Specification](#product-specification)
 - [Dependencies](#dependencies)
@@ -8,8 +9,9 @@
 - [Phase 3 Data Analysis](#phase-3-data-analysis)
 
 ## Main Objectives
-- Did the impeachment negatively affect Donald Trump's approval rating?
-- Has COVID-19 impacted the Democratic Candidate Race?
+We plan to use data in order to analyze President Donald Trump's approval rating and the ongoing Democratic Candidate Race. During our analysis, we answer the following questions:
+1. Did the impeachment negatively affect President Trump's approval rating?
+2. Has COVID-19 impacted the Democratic Candidate Race?
 
 ## Product specification
 ````
@@ -21,19 +23,22 @@ might help you identify features of importance with respect to a target feature 
 ````
 
 ## Dependencies 
-In order to use the web scraper, run the below command for Linux:
+### Scrapy
+In order to perform web scraping, we use Scrapy. Linux and macOS users can run the below command to install: 
 ```
 sudo pip3 install Scrapy
 ```
-To run the modeling and prediction algorithms, run the following command for Linux:
+### scikit-learn
+To run the modeling and prediction algorithms, we use scikit-learn. Linux users can run the below command to install: 
 ```
 sudo pip3 install -U scikit-learn
 ```
-For macOS:
+macOS users can run this command instead:
 ```
 pip install -U scikit-learn
 ```
-To run Data Formatting 
+### Pandas
+To run Data Formatting, we use Pandas. Linux and macOS users can run the below command to install: 
 ```
 pip install pandas
 ```
@@ -71,7 +76,7 @@ We go through all of our data (from both FourThirtyEight and SurveyUSA), perform
 ###### (Due March 20, 2020) Simran, Ronan, and Wesley
 
 We are now using the clean data to answer our [Main Objectives](#main-objectives).
-#### Impeachment
+### 1. Did the impeachment negatively affect President Trump's approval rating?
 
 We have data of Donald Trump's approval ratings since 2017. We filter the data to the specific timeline of the impeachment process. Let's review the timeline of everything before we start.
  
@@ -87,4 +92,4 @@ During the Acquitted process, the trend changes. It is still shaky low 30s to hi
 
 Overall, the changes in his approval ratings were still minimal in the long run. There are moments where the ratings hit an overall low, but the trend still stayed consistent.
 
-#### COVID-19 Impact
+### 2. Has COVID-19 impacted the Democratic Candidate Race?
