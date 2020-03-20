@@ -7,7 +7,6 @@
 
 ### Table of Contents
 - [Main Objectives](#main-objectives)
-- [Product Specification](#product-specification)
 - [Dependencies](#dependencies)
 - [Sprint 1 Data Scraping](#sprint-1-data-scraping)
 - [Sprint 2 Data Cleaning & EDA](#sprint-2-data-cleaning--eda)
@@ -17,14 +16,6 @@
 We plan to use data in order to analyze President Donald Trump's approval rating and the ongoing Democratic Candidate Race. During our analysis, we answer the following questions:
 1. Did the impeachment negatively affect President Trump's approval rating?
 2. Has COVID-19 impacted the Democratic Candidate Race?
-
-## Product specification
-> For this sprint, you are asked to perform data analysis. This can include building a model to
-perform prediction (like applying linear regression or kNN) or clustering. You can also use the
-models for data analysis, not just ‘predictions’. For example, in linear regression we saw that the
-resulting coefficients tell us how the features are correlated to the target variable. So, this analysis
-might help you identify features of importance with respect to a target feature in the dataset.
-
 
 ## Dependencies 
 ### Scrapy
