@@ -21,7 +21,7 @@ You will also need software that is able to read a Jupyter Notebook (.ipnyb file
 - Has COVID-19 impacted the Democratic Candidate Race?
 
 
-Our final project for CS 105 was split up into three phases:
+## Structure
 
 - Phase 1: Data Scraping
 - Phase 2: Data Cleaning & EDA
@@ -57,8 +57,8 @@ SurveyUSA is not very organized and has multiple tables of unique questions. All
 We go through all of our data (from both FourThirtyEight and SurveyUSA), perform EDA on the most relavent data for our topic, and visualize our data using different graphing techniques such as scatterplots and bar graphs.
 
 ## Phase 3: Data Analysis
-##### (Due March 20, 2020) Simran, Ronan, and Wesley
-=======
+###### (Due March 20, 2020) Simran, Ronan, and Wesley
+
 For Phase 2 of the project we fixed some issues with the data collection, then cleaned the data and started performing EDA on it.
 
 The data was being collected in percentages when we should have been getting counts, so Ronan worked on modifying our collection to grab the correct data.
