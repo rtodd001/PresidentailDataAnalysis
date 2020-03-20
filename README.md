@@ -5,9 +5,13 @@ In order to use the web scraper, run the below command for Linux:
 ```
 sudo pip3 install Scrapy
 ```
-Or if you use conda:
+To run the modeling and prediction algorithms, run the following command for Linux:
 ```
-conda install -c conda-forge-scrapy
+sudo pip3 install -U scikit-learn
+```
+For macOS:
+```
+pip install -U scikit-learn
 ```
 You will also need software that is able to read a Jupyter Notebook (.ipnyb file)
 
@@ -25,31 +29,32 @@ Our final project for CS 105 was split up into three phases:
 
 
 ## Phase 1: Data Scraping
-###### (due February 16, 2020)
+###### (Due February 16, 2020) Simran and Ronan
 
-For Phase 1 of the project, we scraped four different datasets from the website SurveyUSA using Scrapy and cleaned them. Links to the datasets are:
+For Phase 1 of the project, we scrape four different datasets from the website SurveyUSA using Scrapy. Links to the datasets are:
 
-[surveyusa 1](http://www.surveyusa.com/client/PollReport.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759)
+http://www.surveyusa.com/client/PollReport_main.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&d=1
+http://www.surveyusa.com/client/PollReport_main.aspx?g=0f19d585-788e-4f86-81d0-d09a5e046780&d=1
+http://www.surveyusa.com/client/PollReport_main.aspx?g=b4747822-277e-4d2c-b896-eb4e04672c09&d=1
+http://www.surveyusa.com/client/PollReport_main.aspx?g=5128ee79-1b59-4146-bf80-54906bb24d4b&d=1
 
-[surveyusa 2](http://www.surveyusa.com/client/PollReport.aspx?g=0f19d585-788e-4f86-81d0-d09a5e046780)
+The website also shows all sample results in frequencies instead of counts. For example in one question, the sample size is 5000 but the result show 53% instead of 2650. We have to inspect the page element in depth to find how to scrape the counts instead of frequencies. After digging through the sources, we find that the landing site has two embedded sites that it loads up based on a dropdown menu that chooses between frequency and counts. We feed the embedded count url into the scraper.
+The landing url for the first link above is as follows:
+http://www.surveyusa.com/client/PollReport.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&
+But the embedded url containing all the data in counts is as follows:
+http://www.surveyusa.com/client/PollReport_main.aspx?g=9634c475-cb54-4a34-ab4b-c0d9a2b82759&d=1
 
-[surveyusa 3](http://www.surveyusa.com/client/PollReport.aspx?g=b4747822-277e-4d2c-b896-eb4e04672c09)
-
-[surveyusa 4](http://www.surveyusa.com/client/PollReport.aspx?g=5128ee79-1b59-4146-bf80-54906bb24d4b)
-
-The website is not very organized, and all of the tables were named the same thing so our robot could not scrape the data in a very meaningful way. After scraping the data, we created a Python script in JupyterLab to clean the data and seperate it into the 34 different tables that were originally found on the website. In each survey folder there is one csv file named surveyusa1/2/3/4.csv with the raw data gathered, and 34 other survey_#.csv files with the separated, reordered, and cleaned data.
-
-The website also showed all sample results in frequencies instead of counts. For example, the sample size was 5000 but the result showed 53% instead of 2650. We had to inspect the page element in depth to find how to scrape the counts instead of frequencies because the url for both were the same. After digging through the sources, we found that the landing site has two embedded sites that it loads up. We found the url for the embedded count data and fed that to our scraper.
-
-We also obtained datasets from the website FourThirtyEight, which shows live polling data. The data was directly downloaded from their GitHub repository [here](https://github.com/fivethirtyeight/data/tree/master/polls).
+We also obtain datasets from the website FourThirtyEight, which show live polling data. The data is directly downloaded from their GitHub repository [here](https://github.com/fivethirtyeight/data/tree/master/polls).
 
 ## Phase 2: Data Cleaning & EDA
-###### (due March 1, 2020)
+###### (Due March 1, 2020) Simran and Wesley
 
-For Phase 2 of the project, we managed to get the SurveyUSA datasets in counts instead of percentages and performed further cleaning to the newly obtained datasets. We then went through all of our data (from both FourThirtyEight and SurveyUSA), performed EDA on the most relavent data for our topic, and visualized our data using different graphing techniques such as scatterplots and bar graphs.
+SurveyUSA is not very organized and has multiple tables of unique questions. All of the tables have the same name so our robot can not scrape the data in a very meaningful way. Our scraper reads all the tables as one big table. We create a Python script in JupyterLab to clean the data and seperate it into the 34 different tables. In each survey folder there is one csv file named surveyusa1/2/3/4.csv with the raw data, and 34 other survey_#.csv files with the separated, reordered, and cleaned data.
+
+We go through all of our data (from both FourThirtyEight and SurveyUSA), perform EDA on the most relavent data for our topic, and visualize our data using different graphing techniques such as scatterplots and bar graphs.
 
 ## Phase 3: Data Analysis
-##### (Due March 20, 2020)
+##### (Due March 20, 2020) Simran, Ronan, and Wesley
 =======
 For Phase 2 of the project we fixed some issues with the data collection, then cleaned the data and started performing EDA on it.
 
