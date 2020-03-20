@@ -118,3 +118,7 @@ Wesley creates a Linear Regression model to show detailed analysis of the candid
 Wesley decided to expand the model to the entire US if the decision is nation-wide. The last two graphs in the Notebook shows a scatterplot of the US polls for Biden vs Bernie. It is clear to see a trend. It is intestring to note that Bernie and Biden have traded approval number through the pandemic. 
 
 We have decided to not do any prediction because it is highly dependent on external factors.
+
+
+### Note
+Ronan wrote the overall report and summary for all three sprints
