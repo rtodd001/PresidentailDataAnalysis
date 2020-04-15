@@ -1,4 +1,4 @@
-# CS 105 Final Project
+# Presidential Data Analysis
 ### Table of Contents
 - [Main Objectives](#main-objectives)
 - [Dependencies](#dependencies)
@@ -35,7 +35,6 @@ pip install pandas
 You will also need software that is able to read a Jupyter Notebook (.ipnyb file)
 
 ## Sprint 1 Data Scraping
-###### (Due February 16, 2020)
 
 For Sprint 1 of the project, we obtain relevant datasets from two different websites: SurveyUSA and FourThirtyEight. 
 
@@ -64,7 +63,6 @@ We also obtain datasets from the website FourThirtyEight, which show live pollin
 - Presidential Approval Polls
 
 ## Sprint 2 Data Cleaning & EDA
-###### (Due March 1, 2020) 
 
 For Sprint 2 of the project, we were required to clean the datasets obtained in Sprint 1 and perform EDA on the relevant data.
 
@@ -75,7 +73,6 @@ SurveyUSA is not very organized and has multiple tables of unique questions. All
 We go through all of our data (from both FourThirtyEight and SurveyUSA), perform EDA on the most relevant data for our topic, and visualize our data using different graphing techniques such as scatterplots and bar graphs. (Simi)
 
 ## Sprint 3 Data Analysis
-###### (Due March 20, 2020)
 
 We are now using the clean data to answer our [Main Objectives](#main-objectives).
 ### 1. Did the impeachment negatively affect President Trump's approval rating?
