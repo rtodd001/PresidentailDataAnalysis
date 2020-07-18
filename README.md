@@ -1,4 +1,8 @@
 # Presidential Data Analysis
+- [Simi Purewal](https://github.com/spure02)
+- [Ronan Todd](https://github.com/rtodd001)
+- [Wesley DeVore](https://github.com/sevarbiter)
+
 ### Table of Contents
 - [Main Objectives](#main-objectives)
 - [Dependencies](#dependencies)
